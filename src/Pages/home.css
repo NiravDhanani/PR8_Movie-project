@@ -1,0 +1,24 @@
+body{
+    background-color: #10141e !important;
+    color: #fff;
+}
+
+.box{
+    height: 250px;
+    width: 100%;
+
+    background: linear-gradient(90deg, rgba(145,53,166,1) 0%, rgba(74,90,158,1) 55%, rgba(7,126,150,1) 88%);;
+}
+
+.search{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-nav{
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
