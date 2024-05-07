@@ -1,7 +1,6 @@
 import "./home.css";
 import { Header } from "../component/Header";
 import { Container } from "react-bootstrap";
-import { Movies } from "./Movies";
 import { data, btns } from "./data";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";

@@ -5,7 +5,8 @@ import "./Header.css";
 export const Header = () => {
   const location = useLocation();
   const [activeItem, setActiveItem] = useState("home");
-
+  
+  
   useEffect(() => {
     // Extract active item from query parameter
     const searchParams = new URLSearchParams(location.search);
@@ -34,24 +35,6 @@ export const Header = () => {
               onClick={() => handleItemClick("home")}
             >
               Home
-            </Link>
-          </li>
-          <li className={`nav-item ${activeItem === "trending" && "active"}`}>
-            <Link
-              to={{ pathname: "/trending", search: "?active=trending" }}
-              className="menu-text"
-              onClick={() => handleItemClick("trending")}
-            >
-              Trending
-            </Link>
-          </li>
-          <li className={`nav-item ${activeItem === "upcoming" && "active"}`}>
-            <Link
-              to={{ pathname: "/upcoming", search: "?active=upcoming" }}
-              className="menu-text"
-              onClick={() => handleItemClick("upcoming")}
-            >
-              Upcoming
             </Link>
           </li>
           <li className={`nav-item ${activeItem === "favorite" && "active"}`}>
